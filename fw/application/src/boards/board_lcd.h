@@ -67,7 +67,7 @@
 #define ADC_PIN 2
 
 // APP
-#define APP_AMIIBO_ENABLE
+// #define APP_AMIIBO_ENABLE
 #define APP_LEGLAMIIBO_ENABLE
 // #define APP_PLAYER_ENABLE
 #if defined(INTERNAL_ENABLE)
@@ -75,5 +75,5 @@
 #endif
 
 // Game
-// #define APP_GAME_ENABLE
+#define APP_GAME_ENABLE
 #endif
