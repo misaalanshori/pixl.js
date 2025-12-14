@@ -24,6 +24,7 @@
 * [SPIFFS](https://github.com/pellepl/spiffs)
 * [ChameleonUltra](https://github.com/RfidResearchGroup/ChameleonUltra)
 * [CH32V003-GameConsole](https://github.com/wagiminator/CH32V003-GameConsole)
+* [pixlAnalyzer](https://github.com/atc1441/pixlAnalyzer)
 
 ## Contribution 
 
