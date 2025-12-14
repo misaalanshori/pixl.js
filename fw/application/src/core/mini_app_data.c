@@ -14,11 +14,13 @@
 const mini_app_t* mini_app_registry[] = {
     &app_status_bar_info,
     &app_desktop_info,
+#ifdef APP_AMIIBO_ENABLE
 #ifdef APP_LEGLAMIIBO_ENABLE
     &app_amiibo_info,
 #endif
     &app_amiidb_info,
     &app_amiibolink_info,
+#endif
     &app_chameleon_info,
 #ifdef APP_PLAYER_ENABLE
     &app_player_info,
