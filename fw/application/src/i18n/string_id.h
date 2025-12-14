@@ -194,6 +194,7 @@ typedef enum {
     _L_APP_GAME_TINY_INVADERS,
     _L_APP_GAME_TINY_LANDER,
     _L_APP_GAME_TINY_TRIS,
+    _L_APP_GAME_PIXL_ANALYZER,
     _L_COUNT,
 } L_StringID;
 #endif
