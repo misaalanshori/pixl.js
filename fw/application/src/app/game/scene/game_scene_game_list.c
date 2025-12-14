@@ -14,6 +14,7 @@
 #include "tiny_invaders.h"
 #include "tiny_lander.h"
 #include "tiny_tris.h"
+#include "pixl_analyzer.h"
 #include "i18n/language.h"
 
 #define ICON_FOLDER 0xe1d6
@@ -53,6 +54,7 @@ static void game_scene_game_list_reload_folders(app_game_t *app) {
     mui_list_view_add_item(app->p_list_view, ICON_FILE, _T(APP_GAME_TINY_INVADERS) , tiny_invaders_run);
     mui_list_view_add_item(app->p_list_view, ICON_FILE, _T(APP_GAME_TINY_ARKANOID), tiny_arkanoid_run);
     mui_list_view_add_item(app->p_list_view, ICON_FILE, _T(APP_GAME_TINY_TRIS), tiny_tris_run);
+    mui_list_view_add_item(app->p_list_view, ICON_FILE, _T(APP_GAME_PIXL_ANALYZER), pixl_analyzer_run);
 }
 
 void game_scene_game_list_on_enter(void *user_data) {
