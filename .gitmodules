@@ -15,4 +15,5 @@
 	url = https://github.com/littlefs-project/littlefs
 [submodule "fw/components/chameleon-ultra"]
 	path = fw/components/chameleon-ultra
-	url = https://github.com/solosky/ChameleonUltra.git
+	url = https://github.com/misaalanshori/ChameleonUltra.git
+	branch = nomiibo_ffb0ccb
