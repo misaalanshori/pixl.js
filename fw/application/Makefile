@@ -289,6 +289,7 @@ SRC_FILES += \
   $(PROJ_DIR)/app/chameleon/scene/chameleon_scene.c \
   $(PROJ_DIR)/app/chameleon/port/fds_utils.c \
   $(PROJ_DIR)/app/chameleon/port/tag_helper.c \
+  $(PROJ_DIR)/app/slideshow/app_slideshow.c \
   $(PROJ_DIR)/app/desktop/app_desktop.c \
   $(PROJ_DIR)/app/desktop/view/app_list_view.c \
   $(PROJ_DIR)/app/amiibo/app_amiibo.c \
@@ -590,6 +591,7 @@ INC_FOLDERS += \
   $(PROJ_DIR)/app/chameleon/port \
   $(PROJ_DIR)/app/chameleon/view \
   $(PROJ_DIR)/app/chameleon/scene \
+  $(PROJ_DIR)/app/slideshow \
   $(PROJ_DIR)/sdk/pwr_mgmt \
   $(COMP_DIR)/amiitool/include \
   $(COMP_DIR)/mlib \

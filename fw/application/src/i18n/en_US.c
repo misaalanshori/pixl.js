@@ -194,4 +194,5 @@ const char * const lang_en_US[_L_COUNT] = {
     [_L_APP_GAME_TINY_LANDER] = "Lander",
     [_L_APP_GAME_TINY_TRIS] = "Tris",
     [_L_APP_GAME_PIXL_ANALYZER] = "Spectrum",
+    [_L_APP_SLIDESHOW] = "Slideshow",
 };
