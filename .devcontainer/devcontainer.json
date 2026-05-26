@@ -1,0 +1,5 @@
+{
+  "name": "Pixl.js Build Environment",
+  "image": "solosky/nrf52-sdk:latest",
+  "postCreateCommand": "apt-get update && apt-get install -y bear"
+}
