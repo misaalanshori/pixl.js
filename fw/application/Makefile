@@ -290,6 +290,10 @@ SRC_FILES += \
   $(PROJ_DIR)/app/chameleon/port/fds_utils.c \
   $(PROJ_DIR)/app/chameleon/port/tag_helper.c \
   $(PROJ_DIR)/app/slideshow/app_slideshow.c \
+  $(PROJ_DIR)/app/slideshow/view/slideshow_view.c \
+  $(PROJ_DIR)/app/slideshow/scene/slideshow_scene.c \
+  $(PROJ_DIR)/app/slideshow/scene/slideshow_scene_main.c \
+  $(PROJ_DIR)/app/slideshow/scene/slideshow_scene_menu.c \
   $(PROJ_DIR)/app/desktop/app_desktop.c \
   $(PROJ_DIR)/app/desktop/view/app_list_view.c \
   $(PROJ_DIR)/app/amiibo/app_amiibo.c \
@@ -592,6 +596,8 @@ INC_FOLDERS += \
   $(PROJ_DIR)/app/chameleon/view \
   $(PROJ_DIR)/app/chameleon/scene \
   $(PROJ_DIR)/app/slideshow \
+  $(PROJ_DIR)/app/slideshow/view \
+  $(PROJ_DIR)/app/slideshow/scene \
   $(PROJ_DIR)/sdk/pwr_mgmt \
   $(COMP_DIR)/amiitool/include \
   $(COMP_DIR)/mlib \
@@ -636,7 +642,7 @@ CFLAGS += -DNRF52_PAN_74
 CFLAGS += -DNRF_SD_BLE_API_VERSION=7
 CFLAGS += -DS112
 CFLAGS += -DSOFTDEVICE_PRESENT
-CFLAGS += -DLV_LVGL_H_INCLUDE_SIMPLE 
+CFLAGS += -DLV_LVGL_H_INCLUDE_SIMPLE
 CFLAGS += -DBOARD_$(BOARD)
 ifneq ($(RELEASE), 1)
 CFLAGS += -DDEBUG
@@ -749,7 +755,7 @@ version:
 settingsgen:
 	nrfutil settings generate --family NRF52 --application $(OUTPUT_DIRECTORY)/pixljs.hex --application-version $(APP_VERSION) --bootloader-version 1 --bl-settings-version 1 $(OUTPUT_DIRECTORY)/settings.hex
 
-ota: 
+ota:
 	nrfutil pkg generate --application $(OUTPUT_DIRECTORY)/pixljs.hex --application-version $(APP_VERSION) --hw-version 52 --sd-req 0x0103 --key-file ../bootloader/priv.pem $(OUTPUT_DIRECTORY)/pixjs_ota_v$(APP_VERSION).zip
 
 full: settingsgen
